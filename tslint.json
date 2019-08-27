@@ -1,0 +1,41 @@
+{ "extends": [
+  "tslint-config-prettier"
+],
+  "linterOptions": {
+  "exclude": [
+    "node_modules/**/*.ts",
+    "**/*.css",
+    "**/*.svg",
+    "**/*.scss",
+    "**/*.md",
+    "**/*.js",
+    "node_modules"
+  ]
+},
+  "rules": {
+      "quotemark": [
+        true,
+        "single",
+        "avoid-escape",
+        "avoid-template"
+      ],
+      "no-console": false,
+      "object-literal-sort-keys": false,
+      "trailing-comma": false,
+      "semicolon": [
+        true,
+        "never"
+      ],
+      "no-string-literal": false,
+      "max-line-length": false,
+      "no-any": false,
+      "jsx-no-lambda": false,
+      "only-arrow-functions": true,
+      "arrow-return-shorthand": true,
+      "no-consecutive-blank-lines": true,
+      "no-trailing-whitespace": true,
+      "jsx-self-close": false,
+      "ordered-imports": false,
+      "no-empty-interface": false
+    }
+}
