@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "compile": "node_modules/.bin/tsc -p tsconfig.json  --preserveWatchOutput --skipLibCheck",
     "start": "node_modules/.bin/tsc-watch -p tsconfig.json --preserveWatchOutput --skipLibCheck --onSuccess \"node ./bin/main\"",
-    "test": "node_modules/.bin/jest --coverage --verbose"
+    "test": "npm run compile && node_modules/.bin/jest --coverage --verbose"
   },
   "keywords": [],
   "dependencies": {
