@@ -2,6 +2,7 @@ import { ServerLoader, ServerSettings } from '@tsed/common'
 import '@tsed/swagger'
 import path = require('path')
 const rootDir = path.resolve(__dirname)
+import TestController from './controllers/TestController'
 
 @ServerSettings({
   rootDir: rootDir,
@@ -10,7 +11,7 @@ const rootDir = path.resolve(__dirname)
     path: '/docs'
   }],
   mount: {
-    '/': `${rootDir}/controllers/**/*.ts`
+    '/': [TestController]
   }
 })
 export default class Server extends ServerLoader {

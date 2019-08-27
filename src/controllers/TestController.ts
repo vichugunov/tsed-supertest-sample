@@ -1,10 +1,7 @@
-
 import { Controller, Get } from '@tsed/common'
 
-import * as Express from 'express'
-
 @Controller('/test')
-export default class VariablesController {
+export default class TestController {
   @Get('/hello')
   public hello() {
     return 'world'

@@ -20,7 +20,7 @@ describe('TestController', () => {
     console.log('routes', routeService.getRoutes())
     const response = await request.get('/test/hello').expect(200)
 
-    return expect(response.body).toBe('world')
+    return expect(response.text).toBe('world')
   })
 
 })
