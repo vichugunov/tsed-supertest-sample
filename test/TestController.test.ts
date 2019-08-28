@@ -8,10 +8,11 @@ describe('TestController', () => {
   let request: SuperTest.SuperTest<SuperTest.Test>
   beforeAll(bootstrap(server))
   let routeService: RouteService
+  let expressApplication: ExpressApplication
 
-  beforeAll(inject([ExpressApplication, RouteService], (expressApplication: ExpressApplication, routeSvc) => {
+  beforeAll(inject([ExpressApplication, RouteService], (...args) => {
+    [expressApplication, routeService] = args
     request = SuperTest(expressApplication)
-    routeService = routeSvc
   }))
 
   afterEach(TestContext.reset)
