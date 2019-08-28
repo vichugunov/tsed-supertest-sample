@@ -7,6 +7,7 @@ module.exports = {
   "testEnvironment": "node",
   "collectCoverage": true,
   "transform": {
+    "^.+\\.js$": "babel-jest",
     "^.+\\.ts$": "ts-jest"
   },
   "transformIgnorePatterns": [

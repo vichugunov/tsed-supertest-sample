@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "node_modules/.bin/tsc -p tsconfig.json  --preserveWatchOutput --skipLibCheck",
     "start": "node_modules/.bin/tsc-watch -p tsconfig.json --preserveWatchOutput --skipLibCheck --onSuccess \"node ./bin/main\"",
-    "test": "npm run compile && node_modules/.bin/jest --coverage --verbose"
+    "test": "node_modules/.bin/jest --coverage --verbose"
   },
   "keywords": [],
   "dependencies": {
@@ -25,6 +25,10 @@
     "@tsed/testing": "^5.27.4",
     "@types/express": "^4.17.0",
     "@types/jest": "^24.0.18",
+    "babel-jest": "^24.9.0",
+    "babel-plugin-dynamic-import-node": "^2.3.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.7.0",
     "jest": "24.9.0",
     "supertest": "4.0.2",
     "ts-jest": "^24.0.2",
