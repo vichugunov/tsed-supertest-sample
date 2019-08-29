@@ -10,7 +10,7 @@
     ".ts"
   ],
   "require": [],
-  "reporter": [
+  "reporter": "reporter": [
     "text-summary",
     "html",
     "lcov"

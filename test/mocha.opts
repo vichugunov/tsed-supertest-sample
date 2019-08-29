@@ -3,5 +3,5 @@
 --require test/register
 --bail
 --recursive
---reporter dot
+--reporter spec
 test/**/*.ts
