@@ -5,3 +5,4 @@ coverage/
 \.DS_Store
 package-lock.json
 .env
+.nyc_output/

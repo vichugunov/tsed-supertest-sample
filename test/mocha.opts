@@ -1,0 +1,7 @@
+--require ts-node/register/transpile-only
+--require tsconfig-paths/register
+--require test/register
+--bail
+--recursive
+--reporter dot
+test/**/*.ts
