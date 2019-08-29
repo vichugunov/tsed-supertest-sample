@@ -2,7 +2,7 @@ import 'jest'
 import { TestContext, inject, bootstrap } from '@tsed/testing'
 import * as SuperTest from 'supertest'
 import {ExpressApplication, RouteService} from "@tsed/common"
-import server from './../bin/server'
+import server from './../src/server'
 
 describe('TestController', () => {
   let request: SuperTest.SuperTest<SuperTest.Test>
