@@ -2,7 +2,8 @@ import { ServerLoader, ServerSettings } from '@tsed/common'
 import '@tsed/swagger'
 import path = require('path')
 const rootDir = path.resolve(__dirname)
-import { TestController } from './controllers'
+import * as controllers from './controllers'
+import * as _ from 'lodash'
 
 @ServerSettings({
   rootDir: rootDir,
@@ -12,7 +13,7 @@ import { TestController } from './controllers'
   }],
   mount: {
     '/': [
-      TestController
+      ..._.values(controllers)
     ]
   }
 })
